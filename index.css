@@ -1,0 +1,154 @@
+/* Reseta margens e configura fontes base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #0056b3;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Estilo do Card dos Exercícios */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #0056b3;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.campo {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Exercício 11: Acessibilidade e Foco Visível para Teclado */
+button:focus, 
+input:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.botoes-grupo {
+    display: flex;
+    gap: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+.aviso-privacidade {
+    display: block;
+    color: #666;
+    margin: 5px 0 10px 0;
+    font-size: 0.85rem;
+}
+
+/* Feedbacks de validação */
+.mensagem-status {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.sucesso {
+    color: #28a745;
+}
+
+.erro {
+    color: #dc3545;
+}
+
+.mural-box {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-left: 4px solid #0056b3;
+    font-family: monospace;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #41be5c;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #28a745;
+    color: rgb(82, 81, 156);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}

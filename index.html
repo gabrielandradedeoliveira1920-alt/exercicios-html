@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Prática - Desenvolvimento Front-End para Web</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Modo 3 de Organização do Código: Ficheiro JS Externo ligado via src com defer (Ex. 20) -->
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Atividade Prática de JavaScript - Exercícios 1 ao 20</h1>
+    </header>
+
+    <main>
+        <!-- EXERCÍCIO 1 e 2: Conversão de tipos de dados e Operadores -->
+        <section class="card">
+            <h2>1 e 2. Conversão e Operadores</h2>
+            <label for="qtdPessoas">Pessoas atendidas:</label>
+            <input type="text" id="qtdPessoas" placeholder="Ex: 20">
+            <button id="btnCalcular">Calcular Cestas (+12)</button>
+            <p id="resCalculo" class="mensagem-status">Aguardando entrada...</p>
+        </section>
+
+        <!-- EXERCÍCIO 3: Variáveis e tipos -->
+        <section class="card">
+            <h2>3. Variáveis e Tipos de Dados</h2>
+            <button id="btnVerificarTipos">Exibir Status do Sistema</button>
+            <p id="resTipos" class="mensagem-status">Clique para verificar os tipos.</p>
+        </section>
+
+        <!-- EXERCÍCIO 4: DOM e Seleção -->
+        <section class="card">
+            <h2>4. DOM e Seleção por ID</h2>
+            <p id="mensagem">Aguardando atualização de comunicado...</p>
+            <button id="btnAtualizarDom">Atualizar Comunicado</button>
+        </section>
+
+        <!-- EXERCÍCIO 5: Eventos -->
+        <section class="card">
+            <h2>5. Manipulação de Eventos</h2>
+            <button id="btnOrientacao">Exibir Orientação de Vacinação</button>
+            <p id="textoOrientacao" class="oculto">Campanha de Vacinação: Leve o seu documento ao posto mais próximo.</p>
+        </section>
+
+        <!-- EXERCÍCIO 6 e 7: Condicionais e Validação de Formulário -->
+        <section class="card">
+            <h2>6 e 7. Condicionais e Validação de Formulário</h2>
+            <form id="formInscricao" novalidate>
+                <div class="campo">
+                    <label for="nomeCidadao">Nome Completo:</label>
+                    <input type="text" id="nomeCidadao" placeholder="Digite o seu nome">
+                </div>
+                <div class="campo">
+                    <label for="emailCidadao">E-mail para contacto:</label>
+                    <input type="email" id="emailCidadao" placeholder="exemplo@email.com">
+                </div>
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+            <p id="resValidacao" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 8: Funções -->
+        <section class="card">
+            <h2>8. Reutilização com Funções</h2>
+            <button id="btnCalcularCusto">Calcular Custo Estimado de Kits Escolares</button>
+            <p id="resCusto" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 9: Arrays e Laços -->
+        <section class="card">
+            <h2>9. Arrays e Laços (for...of)</h2>
+            <button id="btnListarCursos">Listar Cursos Gratuitos</button>
+            <ul id="listaCursos"></ul>
+        </section>
+
+        <!-- EXERCÍCIO 10: Manipulação do DOM (Acessibilidade e Legibilidade) -->
+        <section class="card">
+            <h2>10. Redimensionamento de Texto</h2>
+            <p id="textoAcessivel">Texto de exemplo para ajuste de legibilidade do utilizador.</p>
+            <div class="botoes-grupo">
+                <button id="btnAumentar">Aumentar Texto</button>
+                <button id="btnDiminuir">Diminuir Texto</button>
+            </div>
+        </section>
+
+        <!-- EXERCÍCIO 11 e 17: Acessibilidade, Ética e Privacidade -->
+        <section class="card">
+            <h2>11 e 17. Acessibilidade e Termos de Privacidade</h2>
+            <form id="formEtico">
+                <div class="campo">
+                    <label for="emailBoletim">Receber Notificações da Comunidade:</label>
+                    <input type="email" id="emailBoletim" placeholder="seuemail@exemplo.com">
+                </div>
+                <small class="aviso-privacidade">Coletamos apenas o e-mail para envio de avisos. Não partilhamos dados com terceiros.</small>
+                <button type="submit">Inscrever-se no Boletim</button>
+            </form>
+            <p id="resEtico" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 12: Armazenamento Local (localStorage) -->
+        <section class="card">
+            <h2>12. Preferência de Tema (localStorage)</h2>
+            <button id="btnAlternarTema">Alternar Preferência de Tema</button>
+            <p id="statusTema" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 13: Manipulação de JSON -->
+        <section class="card">
+            <h2>13. Leitura e Conversão de JSON</h2>
+            <button id="btnProcessarJson">Carregar Dados de Oficina (JSON.parse)</button>
+            <p id="resJson" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 14: Consumo de API (fetch) -->
+        <section class="card">
+            <h2>14. Consumo de API (fetch e tratamento de erros)</h2>
+            <button id="btnConsumirApi">Consultar Estado de Serviço na API</button>
+            <p id="resApi" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 15: Datas e Horários -->
+        <section class="card">
+            <h2>15. Formatação de Datas em Português</h2>
+            <button id="btnExibirData">Exibir Data Atual Formatada</button>
+            <p id="resData" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 16: Operações Matemáticas -->
+        <section class="card">
+            <h2>16. Cálculo de Reciclagem</h2>
+            <div class="campo">
+                <label for="pesoReciclavel">Peso (kg):</label>
+                <input type="text" id="pesoReciclavel" placeholder="Ex: 10.5">
+            </div>
+            <div class="campo">
+                <label for="precoKg">Preço por kg (R$):</label>
+                <input type="text" id="precoKg" placeholder="Ex: 2.50">
+            </div>
+            <button id="btnCalcularReciclagem">Calcular Valor a Pagar</button>
+            <p id="resReciclagem" class="mensagem-status"></p>
+        </section>
+
+        <!-- EXERCÍCIO 18: Desempenho e Sustentabilidade -->
+        <section class="card">
+            <h2>18. Contador Sustentável (Execução sob Demanda)</h2>
+            <button id="btnContar">Incrementar Contador</button>
+            <p id="resContador" class="mensagem-status">Cliques registrados: 0</p>
+        </section>
+
+        <!-- EXERCÍCIO 19: Segurança no DOM (textContent vs innerHTML) -->
+        <section class="card">
+            <h2>19. Mural Seguro (Prevenção XSS)</h2>
+            <label for="inputMural">Digite uma mensagem para o mural:</label>
+            <input type="text" id="inputMural" placeholder="Ex: <script>alert('teste')</script> Olá <e>">
+            <button id="btnPublicarMural">Publicar Mensagem</button>
+            <p id="resMural" class="mural-box"></p>
+        </section>
+        
+            <section class="card">
+            <h2>Exercício 20 - Organização do Código</h2>
+            <p id="mensagem">Aguardando ação...</p>
+            <button id="btnAcao">Alterar Mensagem</button>
+            </section>
+    
+    <footer>
+        <p>&copy; 2026 - Projeto de Desenvolvimento Front-End para Web</p>
+    </footer>
+
+</body>
+</html>
